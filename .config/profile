@@ -1,0 +1,15 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+# PLAN9=/opt/plan9port export PLAN9
+# PATH=$PATH:$PLAN9/bin export PATH
+export PLAN9=/opt/plan9port
+export PATH=$PATH:~/.local/bin:$PLAN9/bin
+
+# Setting up XDG Dirs
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+
+# Moving Folder and Files from ~/
+export LESSHISTFILE=-
+export ENV="$XDG_CONFIG_HOME"/shells/ksh/kshrc
+export ZDOTDIR="$XDG_CONFIG_HOME"/shells/zsh

@@ -1,0 +1,24 @@
+#!/bin/sh
+alias \
+ 	la="ls -AG" \
+	ls="ls -G" \
+	l="ls -lAG" \
+	cp="cp -v" \
+	rm="rm -v" \
+	mv="mv -v" \
+ 	vim="nvim" \
+	v="nvim" \
+	f="vifm" \
+	..="cd .." \
+	...="cd ../.." \
+	.3="cd ../../.." \
+	.4="cd ../../../../" \
+	.5="cd ../../../../.." \
+	zshup="source $HOME/.config/shells/zsh/.zshrc" \
+	b="cd ~/.local/bin" \
+	d="cd ~/Documents" \
+	bk="cd ~/Documents/Books" \
+	dw="cd ~/Downloads" \
+	g="cd ~/Documents/git" \
+	c="cd ~/.config" \
+	bc="bc -ls"
