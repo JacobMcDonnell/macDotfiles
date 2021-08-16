@@ -1,0 +1,6 @@
+#!/bin/sh
+
+SHELL=$PLAN9/bin/rc
+font=/mnt/font/Menlo-Regular/15a/font
+fontsrv &
+acme -a -f $font $@

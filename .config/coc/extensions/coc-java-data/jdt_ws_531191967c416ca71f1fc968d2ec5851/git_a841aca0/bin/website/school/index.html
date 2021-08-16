@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Jacob McDonnell</title>
+		<link href="CSS/main.css" rel="stylesheet" type="text/css">
+		<script>
+			function searchDuck(event){
+				var x = document.getElementById('Search').value;
+				if (event.keyCode == 13 || event.which == 13) {
+					location='https://safe.duckduckgo.com/?q=' + encodeURIComponent(document.getElementById('Search').value);}//13 = enter
+			}
+			function FocusOnInput(){
+				document.getElementById("Search").focus();
+			}
+		</script>
+	</head>
+	<body onload="FocusOnInput()">
+		<ul>
+			<li><a href="https://jacobmcdonnell.com/">Home</a></li>
+			<li><a class="desktop" href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl">Gmail</a></li>
+			<li><a class="desktop" href="https://drive.google.com/drive/u/0/my-drive">Google Drive</a></li>
+			<li><a class="desktop" href="https://classroom.google.com/">Google Classroom</a></li>
+			<li><a href="https://parentvue.pvsd.org/PXP2_ClassSchedule.aspx">Student Vue</a></li>
+			<li><a href="https://www.pvsd.org/">PVSD</a></li>
+			<li><a class="desktop" href="https://apstudents.collegeboard.org/?navId=st-apscrs">AP Classroom</a></li>
+			<li><a class="desktop" href="https://iu08.instructure.com/login/canvas">Canvas</a></li>
+			<li><a class="desktop" href="https://deltamath.com/">Deltamath</a></li>
+			<li><a class="desktop" href="https://desmos.com/">Desmos</a></li>
+			<li><a class="desktop" href="https://github.com/JacobMcDonnell">Github</a></li>
+		</ul>
+		<div class="main">
+			<center>
+				<h1 class="icon">JM</h1>
+				<input id="Search" class="search" type="text" placeholder="Search..." onkeydown="searchDuck(event)"/>
+			</center>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /extensions.html
+Disallow: /CSS
+Disallow: /fonts
+Disallow: /404.html
+Disallow: /template.html

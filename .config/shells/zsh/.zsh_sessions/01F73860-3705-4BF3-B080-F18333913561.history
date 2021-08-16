@@ -1,0 +1,104 @@
+ls
+cd jed
+ls
+ssh jmm@jacobmcdonnell.com
+mail
+ssh jmm@jacobmcdonnell.com
+brew install coreutils e2fsprogs qemu bash gcc@10 imagemagick ninja cmake ccache rsync
+cd Downloads
+ls
+cd edwood-0.2.0
+ls
+go get -u -tags 'duitdraw mux9p' github.com/rjkroege/edwood\
+
+go get -u -tags 'duitdraw mux9p' github.com/rjkroege/edwood\
+
+go
+cd /Applications
+ls
+cd Utilities
+ls
+cd ..
+ls
+cd Numbers.app
+ls
+cd Contents
+ls
+cat Info.plist
+cd MacOS
+ls
+exit
+/Users/jmm/Downloads/edwood-0.2.0/edwood ; exit;
+/opt/plan9port/bin/devdraw ; exit;
+cd Downloads/edwood-0.2.0
+go get -u -tags 'duitdraw mux9p' github.com/rjkroege/edwood\
+
+ls
+cd build
+ls
+cd bin
+ls
+cd ..
+ls
+cd ..
+ls
+go get -u -tags 'duitdraw mux9p' github.com/rjkroege/edwood\
+
+ls
+ls bin
+ls build
+ls build/bin
+go build
+cd ..
+ls
+yes | rm -r edwood-0.2.0
+cd edwood-0.2.0
+go build
+ls
+./edwood
+acme
+appify edwood
+ls
+l /Applications
+l
+cd edwood.app
+ls
+cd Contents
+ls
+cd MacOS
+ls
+...
+..
+ls
+rm edwood.app
+rm -r edwood.app
+mkdir edwood.app
+ls
+mv edwood edwood.app
+ls
+rm -r edwood.app
+go build
+ls
+ls
+mkdir edwood.app
+mkdir edwood.app/Contents
+mkdir edwood.app/Contents/MacOS
+cp edwood edwood.app/Contents/MacOS
+l
+cp edwood.app ~/Applications
+cp -r edwood edwood.app/Contents/MacOS
+cp -r edwood.app ~/Applications
+rm -r ~/Applications/edwood.app
+appify edwood
+rm -r edwood.app
+appify edwood ; mv -r edwood.app ~/Applications
+appify edwood ; mv edwood.app ~/Applications
+l
+rm -r ~/Applications/edwood.app
+ls
+cp edwood ~/.local/bin
+cd ..
+rm -r edwood-0.2.0
+b
+rm edwood
+ls

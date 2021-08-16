@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Jacob McDonnell</title>
+		<link href="CSS/main.css" rel="stylesheet" type="text/css">
+		<script>
+			function searchDuck(event){
+				var x = document.getElementById('Search').value;
+				if (event.keyCode == 13 || event.which == 13) {
+					location='https://duckduckgo.com/?q=' + encodeURIComponent(document.getElementById('Search').value);}//13 = enter
+			}
+			function FocusOnInput(){
+				document.getElementById("Search").focus();
+			}
+		</script>
+	</head>
+	<body onload="FocusOnInput()">
+		<ul>
+			<li><a href="https://jacobmcdonnell.com/">Home</a></li>
+			<li><a class="desktop" href="https://search.jacobmcdonnell.com/extensions.html">Chrome Extensions</a></li>
+			<li><a class="desktop" href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl">Gmail</a></li>
+			<li><a class="desktop" href="https://photos.google.com/">Google Photos</a></li>
+			<li><a class="desktop" href="https://domains.google.com/m/registrar/">Google Domains</a></li>
+			<li><a class="desktop" href="https://drive.google.com/drive/u/0/my-drive">Google Drive</a></li>
+			<li><a class="desktop" href="https://www.youtube.com">Youtube</a></li>
+			<li><a class="desktop" href="https://odysee.com/">Odysee</a></li>
+			<li><a href="https://git.jacobmcdonnell.com/">Git</a></li>
+			<li><a href="https://gitlab.com/Jacob_McDonnell">GitLab</a></li>
+			<li><a href="https://github.com/JacobMcDonnell">Github</a></li>
+		</ul>
+		<div class="main">
+			<center>
+				<h1 class="icon">JM</h1>
+				<input id="Search" class="search" type="text" placeholder="Search..." onkeydown="searchDuck(event)"/>
+			</center>
+		</div>
+	</body>
+</html>

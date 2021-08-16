@@ -1,0 +1,100 @@
+echo $PATH
+g++ --version
+t
+exit
+connect
+b
+vim connect
+chmod +x connect
+connect
+connect
+vim connect
+connect
+connect
+cd
+connect
+connect
+connect
+ls
+cd Documents
+ls
+git clone https://github.com/SerenityOS/serenity.git
+cd serenity
+brew install m4 autoconf automake libtool
+Toolchain/BuildFuseExt2.sh
+Meta/serenity.sh rebuild-toolchain
+Meta/serenity.sh run
+ls
+cd Ports
+ls
+cd make
+ls
+./package.sh
+./package.sh
+ls
+cd ..
+ls
+cd gcc
+ls
+./package.sh
+..
+ls
+..
+ls
+Meta/serenity.sh run
+cd ports
+ls
+cd binutils
+ls
+./package.sh
+..
+ls
+cd gcc
+./package.sh
+cd ..
+cd make
+./package.sh
+cd ..
+ls
+cd neofetch
+./package.sh
+..
+ls
+cd tinycc
+ls
+./package.sh
+..
+l
+ls
+cd llvm
+ls
+./package.sh
+..
+..
+Meta/serenity.sh run
+Meta/serenity.sh run
+ls
+Ports/make/package.sh
+cd Ports/make
+./package.sh
+brew install gpg
+./package.sh
+..
+ls
+cd gcc
+./package.sh
+..
+ls
+cd bison
+./package.sh
+..
+ls
+cd llvm
+./package.sh
+...
+Meta/serenity.sh run
+Meta/serenity.sh run
+Meta/serenity.sh run
+Meta/serenity.sh run
+Meta/serenity.sh run
+pcc

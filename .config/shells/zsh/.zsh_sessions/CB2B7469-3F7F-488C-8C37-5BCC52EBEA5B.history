@@ -1,0 +1,100 @@
+ssh jmm@jacobmcdonnell.com
+acme
+cd $PLAN9/bin
+ls
+upas
+a
+echo $SHELL
+cd /mnt
+cd /
+ls
+fontsrv
+fontsrv
+fontsrv
+cd
+ls
+la
+acme
+cd
+cd Downloads
+ls
+a coin.c
+cd $PLAN9
+ls
+git
+la
+git pull
+sudo git pull
+sudo ./INSTALL
+9term
+ls
+rm -r go
+yes | rm -r go
+sudo rm -r go
+ls
+rm logo.png
+ls
+g
+cd jed
+ls
+acme jed.java
+acme -f /usr/local/plan9/font/lucsans/euro.14.font jed.java
+acme -f $PLAN9/font/lucsans/euro.14.font jed.java
+acme -f $PLAN9/font/pelm/ascii.16.font jed.java
+acme -f $PLAN9/font/pelm/ascii.12.font jed.java
+acme -f $PLAN9/font/pelm/ascii.10.font jed.java
+acme -f $PLAN9/font/lucsans/euro.8.font jed.java
+acme -f $PLAN9/font/times/R.8.1 jed.java
+acme -f $PLAN9/font/times/latin1.7.font jed.java
+acme -f $PLAN9/font/luc/unicode.9.font jed.java
+acme -f $PLAN9/font/luc/unicode.5.font jed.java
+acme -f $PLAN9/font/luc/unicode.7.font jed.java
+acme -f $PLAN9/font/luc/unicode.8.font jed.java
+acme -f $PLAN9/font/pelm/ascii.10.font jed.java
+acme -f /System/Library/Fonts/SFNSMono.ttf jed.java
+acme -f $PLAN9/font/pelm/ascii.10.font ~/.local/bin/a
+ls
+cat jed.java
+./jed jed.java
+9p ls font
+cd /mnt
+ls
+9p ls font
+cd /tmp
+ls
+cd ns.jmm._private_tmp_com.apple.launchd.OUMzHFaUrD_org.xquartz:0
+ls
+cd font
+l
+acme -a -f /mnt/font/Menlo-Regular/12a/font acme.log
+acme -a -f /mnt/font/Menlo-Regular/14a/font acme.log
+acme -a -f /mnt/font/Menlo-Regular/16a/font acme.log
+g
+cd jed
+ls
+acme -a -f /mnt/font/Menlo-Regular/16a/font jed.java
+acme -a -f /mnt/font/Menlo-Regular/15a/font jed.java
+acme -a -f /mnt/font/Menlo-Regular/15a/font ~/.local/bin/a
+a ~/.local/bin/a
+a ~/.local/bin/a
+a ~/.local/bin/a
+killall fontsrv
+killall fontsrv
+killall fontsrv
+a ~/.local/bin/a
+a ~/.local/bin/a
+a ~/.local/bin/a
+ls ~
+a ~/.local/bin/a
+pwd
+a jed.java
+a jed.java
+a jed.java
+g
+cd jed
+a jed.java
+g
+cd jed
+ls
+a jed.java
+bc

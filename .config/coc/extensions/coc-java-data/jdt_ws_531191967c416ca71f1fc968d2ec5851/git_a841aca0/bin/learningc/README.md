@@ -1,0 +1,2 @@
+# Learning C
+This Repo follows my adventures of learning C. I am following the "The C Programming Language, 2nd Edition", "C Programming: A Modern Approach, 2nd Edition", and "Expert C Programming Deep C Secrets". The compiler used is the [RealMan's Compiler Collection](https://mpcomplete.org/proj/rmcc/) to promot better debugging skills without the compiler, but the compiler can be switched to tcc, gcc, clang, etc. in the Makefiles.

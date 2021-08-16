@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Jacob McDonnell</title>
+		<link href="CSS/main.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<ul>
+			<li><a href="https://seach.jacobmcdonnell.com/">Home</a></li>
+			<li><a class="desktop" href="https://search.jacobmcdonnell.com/extensions.html">Chrome Extensions</a></li>
+			<li><a class="desktop" href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl">Gmail</a></li>
+			<li><a class="desktop" href="https://photos.google.com/">Google Photos</a></li>
+			<li><a class="desktop" href="https://domains.google.com/m/registrar/">Google Domains</a></li>
+			<li><a class="desktop" href="https://drive.google.com/drive/u/0/my-drive">Google Drive</a></li>
+			<li><a class="desktop" href="https://www.youtube.com">Youtube</a></li>
+			<li><a class="desktop" href="https://lbry.tv">lbry</a></li>
+			<li><a href="https://git.jacobmcdonnell.com/">Git</a></li>
+			<li><a href="https://gitlab.com/Jacob_McDonnell">GitLab</a></li>
+			<li><a href="https://github.com/JacobMcDonnell">Github</a></li>
+		</ul>
+		<div class="main">
+			<h1>Jacob's Chrome Extension Grabber</h1>
+			<p>Note: When selecting multiple from the quick selector you will have to allow pop ups or select them one at a time.</p>
+			<h2>Quick Selector</h2>
+			<form id="extensions">
+				<input type="checkbox" id="gcbommkclmclpchllfjekcdonpmejbdp" name="gcbommkclmclpchllfjekcdonpmejbdp" value="gcbommkclmclpchllfjekcdonpmejbdp"><label for="gcbommkclmclpchllfjekcdonpmejbdp">HTTPS Everywhere</label><br>
+				<input type="checkbox" id="cjpalhdlnbpafiamejdnhcphjbkeiagm" name="cjpalhdlnbpafiamejdnhcphjbkeiagm" value="cjpalhdlnbpafiamejdnhcphjbkeiagm"><label for="cjpalhdlnbpafiamejdnhcphjbkeiagm">Ublock Origin</label><br>
+				<input type="checkbox" id="pkehgijcmpdhfbdbbnkijodmdjhbjlgp" name="pkehgijcmpdhfbdbbnkijodmdjhbjlgp" value="pkehgijcmpdhfbdbbnkijodmdjhbjlgp"><label for="pkehgijcmpdhfbdbbnkijodmdjhbjlgp">Privacy Badger</label><br>
+				<input type="checkbox" id="nngceckbapebfimnlniiiahkandclblb" name="nngceckbapebfimnlniiiahkandclblb" value="nngceckbapebfimnlniiiahkandclblb"><label for="nngceckbapebfimnlniiiahkandclblb">Bitwarden</label><br>
+				<input type="checkbox" id="icpgjfneehieebagbmdbhnlpiopdcmna" name="icpgjfneehieebagbmdbhnlpiopdcmna" value="icpgjfneehieebagbmdbhnlpiopdcmna"><label for="icpgjfneehieebagbmdbhnlpiopdcmna">New Tab Redirect</label><br>
+				<input type="checkbox" id="cmhmcmgkegfffbbfobhjpdbimgmoohap" name="cmhmcmgkegfffbbfobhjpdbimgmoohap" value="cmhmcmgkegfffbbfobhjpdbimgmoohap"><label for="cmhmcmgkegfffbbfobhjpdbimgmoohap">Slate Theme</label><br>
+				<input type="submit" value="Install">
+			</form>
+			<h2>Paste Chrome Webstore Link Here:</h2>
+			<form id="chrome" onsubmit="idGrabber()">
+				<input type="text" id="links"><br>
+				<input type="submit" value="Install">
+			</form>
+		</div>
+		<script>
+			const myForm = document.getElementById("extensions");
+			myForm.addEventListener("submit", (e) => {
+			    var formData = new FormData(myForm);
+			    e.preventDefault();
+			    for(var value of formData.values()){
+				installer(value);
+			    }
+			});
+			function idGrabber(){
+				installer(document.getElementById('links').value.split("/")[6]);
+			}
+			function installer(value){
+				console.log(value);
+				window.open("https://clients2.google.com/service/update2/crx?response=redirect&prodversion=49.0&acceptformat=crx3&x=id%3D" + value + "%26installsource%3Dondemand%26uc");
+			}
+			(function() {
+			var menu = document.querySelector('ul'),
+			    menulink = document.getElementById('menuicon'),
+			    menuclose = document.getElementById('menuX');
+			menulink.addEventListener('click', function(e) {
+			    menu.classList.toggle('active');
+			    e.preventDefault();
+			});
+			menuX.addEventListener('click', function(e) {
+			    menu.classList.toggle('active');
+			    e.preventDefault();
+			});
+			})();
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,100 @@
+./jed test.txt
+vim jed.java
+./jed jed.java
+tmux
+ls
+mkdir jed
+mv jed jedf
+mkdir jed
+ls
+mv jed.class jed
+mv jed.java jed
+mv jedf jed/jed
+ls
+cd jed
+ls
+javac -d . jed.java
+ls
+vim MANIFEST.mf
+mv MANIFEST.mf MANIFEST.MF
+jar cvmf MANIFEST.MF jed.jar jed.class
+ls
+java -jar jed.jar
+vim makefile
+make clean
+ls
+rm jed.class jed.jar
+make
+vim makefile
+make
+vim makefile
+make
+ls
+make clean
+ls
+make
+ls
+vim jed
+ls
+./jed makefile
+cat MANIFEST.MF
+exit
+ls
+cat test.txt
+ed test.txt
+ed
+ls
+rm te
+ed test.txt
+cat jed.java
+exit
+cat .ssh/id_rsa.pub
+ssh root@mail.jacobmcdonnell.com
+ssh root@mail.jacobmcdonnell.com
+ssh root@mail.jacobmcdonnell.com
+ssh root@mail.jacobmcdonnell.com
+vim .ssh/known_hosts
+ssh root@mail.jacobmcdonnell.com
+ssh root@mail.jacobmcdonnell.com
+ssh root@mail.jacobmcdonnell.com
+ssh root@mail.jacobmcdonnell.com
+ssh root@mail.jacobmcdonnell.com
+ssh root@mail.jacobmcdonnell.com
+ssh root@mail.jacobmcdonnell.com
+ssh root@mail.jacobmcdonnell.com
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@mail.jacobmcdonnell.com
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@mail.jacobmcdonnell.com
+vim .ssh/known_hosts
+ssh-copy-id -i ~/.ssh/id_rsa.pub root@mail.jacobmcdonnell.com
+ssh jmm@jacobmcdonnell.com
+bc
+ssh jmm@jacobmcdonnell.com
+ls
+wget https://git.jacobmcdonnell.com/logo.png
+brew install rsync
+rsync -rtvzP logo.png root@jacobmcdonnell.com:/var/www/htdocs/cgit/
+rsync -rtvzP logo.png jmm@jacobmcdonnell.com:/var/www/htdocs/cgit/
+rsync -rtvzP logo.png jmm@jacobmcdonnell.com:/home/jmm
+rsync -rtvzP logo.png jmm@jacobmcdonnell.com:/home/jmm
+ssh jmm@jacobmcdonnell.com
+g
+ls
+cd learningc
+ls
+cd TheCProgrammingLanguage
+cd ch3
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+rm te test.txt cat.java jat.class jat
+ls
+cd jed
+ls
+ssh jmm@jacobmcdonnell.com
+mail
+ssh jmm@jacobmcdonnell.com
+brew install coreutils e2fsprogs qemu bash gcc@10 imagemagick ninja cmake ccache rsync

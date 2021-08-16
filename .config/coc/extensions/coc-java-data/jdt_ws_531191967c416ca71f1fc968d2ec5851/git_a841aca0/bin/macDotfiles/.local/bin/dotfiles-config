@@ -1,0 +1,97 @@
+#!/bin/sh
+DOTFILESDIR=$HOME/Documents/projects/gitlab/dotfiles
+add(){
+	cd $HOME
+	declare -i count=1
+	declare -i countForDia=1
+	while [ "$count" -le "$(ls -A $HOME | wc -w)" ]
+	do
+	        name[$countForDia]="$(ls -A $HOME | sed "${count}q;d")"
+	        forDialog[$countForDia]="${countForDia} $(ls -A $HOME | sed "${count}q;d") off "
+	        count=$((count+1))
+	        countForDia=$((countForDia+1))
+	done
+	count=1
+	while [ "$count" -le "$(ls -A $HOME/.config/ | wc -w)" ]
+	do
+	        name[$countForDia]=".config/$(ls -A $HOME/.config/ | sed "${count}q;d")"
+	        forDialog[$countForDia]="${countForDia} .config/$(ls -A $HOME/.config/ | sed "${count}q;d") off "
+	        countForDia=$((countForDia+1))
+	        count=$((count+1))
+	done
+	count=1
+	while [ "$count" -le "$(ls -A $HOME/.local/share/ | wc -w)" ]
+	do
+	        name[$countForDia]=".local/share/$(ls -A $HOME/.local/share/ | sed "${count}q;d")"
+	        forDialog[$countForDia]="${countForDia} .local/share/$(ls -A $HOME/.local/share/ | sed "s/Paradox Interactive/ParadoxInteractive/g" | sed "${count}q;d") off "
+	        countForDia=$((countForDia+1))
+	        count=$((count+1))
+	done
+	name[$countForDia]=".local/bin/"
+	forDialog[$countForDia]="${countForDia} .local/bin/ off"
+	set -A files $(dialog --title "Dotfiles in the Home directory" --checklist "Select dotfiles:" 0 0 0 ${forDialog[*]} 3>&1 1>&2 2>&3 3>&-)
+	cd $DOTFILESDIR
+	count=0
+	while [ "$count" -le "${#files[@]}" ]
+	do
+	        [ -f ${name[${files[$count]}]} ] && cp $HOME/${name[${files[$count]}]} ${name[${files[$count]}]}
+        	[ -d ${name[${files[$count]}]} ] && cp -TR $HOME/${name[${files[$count]}]} ${name[${files[$count]}]}
+		git add ${name[${files[$count]}]}
+	        count=$((count+1))
+	done
+	COMMITMSG=$(dialog --title "Commit Message" --inputbox "Message" 0 0 3>&1 1>&2 2>&3 3>&-)
+	git commit -m "$COMMITMSG"
+	git push
+}
+del(){
+	cd $DOTFILESDIR
+	declare -i count=1
+	declare -i countForDia=1
+	while [ "$count" -le "$(ls -A $DOTFILESDIR | wc -w)" ]
+	do
+	        name[$countForDia]="$(ls -A $DOTFILESDIR | sed "${count}q;d")"
+	        forDialog[$countForDia]="${countForDia} $(ls -A $DOTFILESDIR | sed "${count}q;d") off "
+	        count=$((count+1))
+	        countForDia=$((countForDia+1))
+	done
+	count=1
+	while [ "$count" -le "$(ls -A $DOTFILESDIR/.config/ | wc -w)" ]
+	do
+	        name[$countForDia]=".config/$(ls -A $DOTFILESDIR/.config/ | sed "${count}q;d")"
+	        forDialog[$countForDia]="${countForDia} .config/$(ls -A $DOTFILESDIR/.config/ | sed "${count}q;d") off "
+	        countForDia=$((countForDia+1))
+	        count=$((count+1))
+	done
+	count=1
+	while [ "$count" -le "$(ls -A $DOTFILESDIR/.local/share/ | wc -w)" ]
+	do
+	        name[$countForDia]=".local/share/$(ls -A $DOTFILESDIR/.local/share/ | sed "${count}q;d")"
+	        forDialog[$countForDia]="${countForDia} .local/share/$(ls -A $DOTFILESDIR/.local/share/ | sed "${count}q;d") off "
+	        countForDia=$((countForDia+1))
+	        count=$((count+1))
+	done
+	count=1
+	while [ "$count" -le "$(ls -A $DOTFILESDIR/.local/bin/ | wc -w)" ]
+	do
+	        name[$countForDia]=".local/bin/$(ls -A $DOTFILESDIR/.local/bin/ | sed "${count}q;d")"
+	        forDialog[$countForDia]="${countForDia} .local/bin/$(ls -A $DOTFILESDIR/.local/bin/ | sed "${count}q;d") off "
+	        countForDia=$((countForDia+1))
+	        count=$((count+1))
+	done
+	set -A files $(dialog --title "Dotfiles in the Dotfiles directory" --checklist "Select dotfiles:" 0 0 0 ${forDialog[*]} 3>&1 1>&2 2>&3 3>&-)
+	count=0
+	while [ "$count" -le "${#files[@]}" ]
+	do
+		git rm -r ${name[${files[$count]}]}
+		echo ${name[${files[$count]}]}
+		count=$((count+1))
+	done
+	COMMITMSG=$(dialog --title "Commit Message" --inputbox "Message" 0 0 3>&1 1>&2 2>&3 3>&-)
+	git commit -m "$COMMITMSG"
+	git push
+}
+mainMenu(){
+	select=$(dialog --title "Dotfiles Script" --menu "Select an option:" 0 0 0 1 Add 2 Delete 3>&1 1>&2 2>&3 3>&-)
+	( [ $select = 1 ] && add ) || ( [ $select = 2 ] && del )
+}
+mainMenu

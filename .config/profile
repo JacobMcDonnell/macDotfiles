@@ -1,8 +1,7 @@
 eval "$(/opt/homebrew/bin/brew shellenv)"
-# PLAN9=/opt/plan9port export PLAN9
-# PATH=$PATH:$PLAN9/bin export PATH
 export PLAN9=/opt/plan9port
-export PATH=$PATH:~/.local/bin:$PLAN9/bin
+export CEDEV=/opt/CEdev
+export PATH=$PATH:~/.local/bin:$PLAN9/bin:$CEDEV/bin
 
 # Setting up XDG Dirs
 export XDG_CONFIG_HOME=$HOME/.config

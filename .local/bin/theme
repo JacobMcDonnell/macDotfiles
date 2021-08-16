@@ -1,0 +1,14 @@
+#!/bin/zsh
+# Switch to Solarized Dark if we are currently in dark mode
+if [[ "$(uname -s)" == "Darwin" ]]; then
+  val=$(defaults read -g AppleInterfaceStyle 2>/dev/null)
+  if [[ $val == "Dark" ]]; then
+    osascript -e 'tell application "Terminal"
+      set current settings of tabs of windows to settings set "PaperColor-dark" # Theme name
+    end tell'
+  else
+    osascript -e 'tell application "Terminal"
+      set current settings of tabs of windows to settings set "PaperColor-light" # Theme name
+    end tell'
+  fi
+fi

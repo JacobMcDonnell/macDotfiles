@@ -1,5 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =4
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/Users/jmm/Documents/git/ticalcprograms/FibFinder/src'
+let g:netrw_dirhist_8='/Users/jmm/Documents/git/ticalcprograms/FibFinder'
+let g:netrw_dirhist_7='/Users/jmm/Documents/git/ticalcprograms/FizzBuzz/src'
+let g:netrw_dirhist_6='/opt/CEdev/examples/hello_world/src'
+let g:netrw_dirhist_5='/opt/CEdev/examples/hello_world'
 let g:netrw_dirhist_4='/home/jmm/.config/gzdoom'
 let g:netrw_dirhist_3='/home/jmm/.local/share/xsessions'
 let g:netrw_dirhist_2='/home/jmm/.config/ncmpcpp'

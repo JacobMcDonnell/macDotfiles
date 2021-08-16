@@ -1,0 +1,67 @@
+--- config.def.h	Sat Feb  2 07:55:28 2019
++++ config.def.h	Fri Sep 25 22:59:11 2020
+@@ -44,7 +44,7 @@
+ };
+
+ /* key definitions */
+-#define MODKEY Mod1Mask
++#define MODKEY Mod4Mask
+ #define TAGKEYS(KEY,TAG) \
+ 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
+ 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
+@@ -59,10 +59,11 @@
+ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+ static const char *termcmd[]  = { "st", NULL };
+
++#include <X11/XF86keysym.h>
+ static Key keys[] = {
+ 	/* modifier                     key        function        argument */
+-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+-	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
++	{ MODKEY|Mod1Mask               XK_space,  spawn,          {.v = dmenucmd } },
++	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+ 	{ MODKEY,                       XK_b,      togglebar,      {0} },
+ 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
+ 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
+@@ -70,7 +71,7 @@
+ 	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
+ 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
+ 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
+-	{ MODKEY,                       XK_Return, zoom,           {0} },
++	{ MODKEY|ShiftMask,             XK_Return, zoom,           {0} },
+ 	{ MODKEY,                       XK_Tab,    view,           {0} },
+ 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
+ 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
+@@ -94,7 +95,30 @@
+ 	TAGKEYS(                        XK_8,                      7)
+ 	TAGKEYS(                        XK_9,                      8)
+ 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+-};
++	/* Special Commands */
++        { MODKEY|ControlMask|ShiftMask,         XK_l,      spawn,          SHCMD("slock") },
++        { MODKEY|ControlMask|ShiftMask,         XK_s,      spawn,          SHCMD("prompt 'Shutdown?' 'sudo shutdown -h now'") },
++        { MODKEY|ControlMask|ShiftMask,         XK_r,      spawn,          SHCMD("prompt 'Reboot?' 'sudo reboot'") },
++        { MODKEY,                               XK_u,      spawn,          SHCMD("getUnicode") },
++        /* Special Keys */
++        { 0, XF86XK_AudioMute,                     spawn,          SHCMD("pamixer -t ; pkill -RTMIN+2 dwmblocks") },
++        { 0, XF86XK_AudioRaiseVolume,              spawn,          SHCMD("pamixer --allow-boost -i 5; pkill -RTMIN+2 dwmblocks") },
++        { 0, XF86XK_AudioLowerVolume,              spawn,          SHCMD("pamixer --allow-boost -d 5; pkill -RTMIN+2 dwmblocks") },
++        { 0, XF86XK_MonBrightnessUp,               spawn,          SHCMD("brightness -inc") },
++	{ 0, XF86XK_MonBrightnessDown,             spawn,          SHCMD("brightness -dec") },
++	/* Programs */
++	{ MODKEY|Mod1Mask,              XK_b,      spawn,          SHCMD("$BROWSER") },
++        { MODKEY|Mod1Mask,              XK_f,      spawn,          SHCMD("$TERMINAL -e $FILE") },
++        { MODKEY|Mod1Mask,              XK_s,      spawn,          SHCMD("syncterm") },
++        { MODKEY|Mod1Mask,              XK_h,      spawn,          SHCMD("$TERMINAL -e htop") },
++        { MODKEY|Mod1Mask,              XK_n,      spawn,          SHCMD("$TERMINAL -e newsboat") },
++        { MODKEY|Mod1Mask,              XK_v,      spawn,          SHCMD("$TERMINAL -e nvim") },
++        { MODKEY|Mod1Mask,              XK_c,      spawn,          SHCMD("$TERMINAL -e calc") },
++	{ MODKEY|Mod1Mask,              XK_m,      spawn,          SHCMD("$TERMINAL -e ncmpcpp") },
++	{ MODKEY|Mod1Mask,              XK_g,      spawn,          SHCMD("games") },
++       { MODKEY|Mod1Mask,              XK_a,      spawn,          SHCMD("acme") },
++       { MODKEY|Mod1Mask,              XK_o,      spawn,          SHCMD("openBook") },
++       { MODKEY|Mod1Mask,              XK_r,      spawn,          SHCMD("tabbed -c surf -e") },
++};
+
+ /* button definitions */
+ /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */

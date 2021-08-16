@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/jmm/.config/gzdoom'
+let g:netrw_dirhist_3='/home/jmm/.local/share/xsessions'
+let g:netrw_dirhist_2='/home/jmm/.config/ncmpcpp'
+let g:netrw_dirhist_1='/home/jmm/st/.git'

@@ -1,0 +1,297 @@
+!SESSION 2021-06-16 21:58:30.325 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=16.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Command-line arguments:  -data /Users/jmm/.config/coc/extensions/coc-java-data/jdt_ws_8be8f6009acfa0926310552c504d38f2
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:32.579
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:32.858
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:32.894
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:32.902
+!MESSAGE Initializing Java Language Server 1.2.0.202106141749
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:32.943
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:32.944
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.navigate.openTypeHierarchy, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.provideSemanticTokens, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.navigate.resolveTypeHierarchy, java.project.getSemanticTokensLegend, java.edit.stringFormatting, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:32.979
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:32.995
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:33.313
+!MESSAGE Default VM Install changed from  null to net.java.openjdk.jdk-/Library/Java/JavaVirtualMachines/jdk-16.0.1.jdk/Contents/Home
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:33.342
+!MESSAGE defaultVMInstallChanged -> force update of jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:33.373
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:35.107
+!MESSAGE Try to create an invisible project for the workspace /Users/jmm/Downloads/monteCarlo
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:35.110
+!MESSAGE Creating the Java project monteCarlo_c7649739
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:35.180
+!MESSAGE Finished creating the Java project monteCarlo_c7649739
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:35.211
+!MESSAGE Successfully created a workspace invisible project monteCarlo_c7649739
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:35.383
+!MESSAGE Workspace initialized in 2435ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:35.457
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:35.508
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:35.526
+!MESSAGE >> New configuration: {java={enabled=true, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive, runtimes=[]}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}, offline={enabled=false}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, maven={updateSnapshots=false, downloadSources=false}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, saveActions={organizeImports=false}, project={referencedLibraries=[lib/**/*.jar], resourceFilters=[node_modules, .git]}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={maxResults=0.0, enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], filteredTypes=[java.awt.*, com.sun.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}, selectionRange={enabled=true}, sources={organizeImports={starThreshold=99.0, staticStarThreshold=99.0}}, templates={fileHeader=[], typeComment=[]}, references={includeAccessors=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:35.533
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:35.684
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:36.313
+!MESSAGE >> Updating classpath for project monteCarlo_c7649739
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:36.444
+!MESSAGE Reconciled 2. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:37.450
+!MESSAGE begin problem for /MonteCarlo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:37.453
+!MESSAGE 0 problems reported for /MonteCarlo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:37.694
+!MESSAGE begin problem for /main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:37.695
+!MESSAGE 1 problems reported for /main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:37.698
+!MESSAGE Validated 2. Took 1241 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:37.725
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:37.740
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:37.745
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:37.745
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:37.746
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:37.748
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:58.505
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:58.958
+!MESSAGE Reconciled 1. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:59.261
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:59.279
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:59.714
+!MESSAGE Reconciled 1. Took 40 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:59.786
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:59.806
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:58:59.841
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:00.307
+!MESSAGE Reconciled 1. Took 60 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:00.818
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:00.940
+!MESSAGE begin problem for /MonteCarlo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:00.940
+!MESSAGE 0 problems reported for /MonteCarlo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:01.105
+!MESSAGE begin problem for /main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:01.107
+!MESSAGE 3 problems reported for /main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:01.112
+!MESSAGE Validated 2. Took 401 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:01.138
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:01.159
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:01.173
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:01.282
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:01.585
+!MESSAGE Reconciled 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:02.124
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:02.147
+!MESSAGE begin problem for /MonteCarlo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:02.147
+!MESSAGE 0 problems reported for /MonteCarlo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:02.220
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:02.221
+!MESSAGE begin problem for /main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:02.221
+!MESSAGE 3 problems reported for /main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:02.222
+!MESSAGE Validated 2. Took 215 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:02.453
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:02.463
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:02.843
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:02.881
+!MESSAGE Reconciled 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:03.418
+!MESSAGE begin problem for /MonteCarlo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:03.418
+!MESSAGE 0 problems reported for /MonteCarlo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:03.494
+!MESSAGE begin problem for /main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:03.495
+!MESSAGE 1 problems reported for /main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:03.495
+!MESSAGE Validated 2. Took 204 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:04.006
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:04.146
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:04.572
+!MESSAGE Reconciled 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:04.687
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:05.203
+!MESSAGE begin problem for /MonteCarlo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:05.207
+!MESSAGE 0 problems reported for /MonteCarlo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:05.221
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:05.462
+!MESSAGE begin problem for /main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:05.463
+!MESSAGE 3 problems reported for /main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:05.465
+!MESSAGE Validated 2. Took 483 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:05.476
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:05.920
+!MESSAGE Reconciled 1. Took 32 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:06.093
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:06.514
+!MESSAGE Reconciled 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:06.773
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:07.241
+!MESSAGE Reconciled 1. Took 38 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:07.251
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:07.681
+!MESSAGE Reconciled 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:08.206
+!MESSAGE begin problem for /MonteCarlo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:08.206
+!MESSAGE 0 problems reported for /MonteCarlo.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:08.249
+!MESSAGE begin problem for /main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:08.250
+!MESSAGE 0 problems reported for /main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:08.250
+!MESSAGE Validated 2. Took 164 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:19.540
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:19.570
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:19.617
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-06-16 21:59:20.807
+!MESSAGE >> document/didClose

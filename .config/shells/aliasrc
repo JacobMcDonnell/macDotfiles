@@ -1,14 +1,12 @@
 #!/bin/sh
 alias \
- 	la="ls -AG" \
-	ls="ls -G" \
-	l="ls -lAG" \
+ 	la="ls -AhG" \
+	ls="ls -Gh" \
+	l="ls -lAhG" \
 	cp="cp -v" \
 	rm="rm -v" \
 	mv="mv -v" \
  	vim="nvim" \
-	v="nvim" \
-	f="vifm" \
 	..="cd .." \
 	...="cd ../.." \
 	.3="cd ../../.." \
@@ -21,4 +19,5 @@ alias \
 	dw="cd ~/Downloads" \
 	g="cd ~/Documents/git" \
 	c="cd ~/.config" \
-	bc="bc -ls"
+	bc="bc -ls" \
+	serv="ssh -Y jmm@jacobmcdonnell.com"
